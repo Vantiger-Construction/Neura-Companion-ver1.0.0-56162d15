@@ -1,45 +1,17 @@
 name: neuro_companion
-description: A complete AI wellness tracker with BLE, voice, export, and Pro unlocks.
+description: A lightweight mental wellness assistant.
 version: 1.0.0+1
-
 environment:
   sdk: ">=2.17.0 <4.0.0"
-
 dependencies:
   flutter:
     sdk: flutter
   shared_preferences: ^2.2.0
+  path_provider: ^2.1.2
   share_plus: ^7.0.0
   speech_to_text: ^6.3.0
-  flutter_riverpod: ^2.4.0
-  firebase_core: ^2.25.4
-  firebase_crashlytics: ^3.3.3
-  azure_storage_blobs: ^0.11.0
-  azure_identity: ^0.1.0
-  file_picker: ^6.1.1
-  shimmer: ^3.0.0
-  connectivity_plus: ^4.0.2
-  flutter_blue_plus: ^1.30.4
-  usb_serial: ^0.3.0
-  flutter_tts: ^3.6.3
-  path_provider: ^2.1.2
-  pdf: ^3.10.4
-  in_app_purchase: ^3.1.6
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  integration_test:
-    sdk: flutter
-
 flutter:
   uses-material-design: true
-  assets:
-    - assets/images/
-    - assets/sounds/
-  fonts:
-    - family: Roboto
-      fonts:
-        - asset: assets/fonts/Roboto-Regular.ttf
-        - asset: assets/fonts/Roboto-Bold.ttf
-          weight: 700
