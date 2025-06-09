@@ -1,17 +1,33 @@
-name: neuro_companion
-description: A lightweight mental wellness assistant.
-version: 1.0.0+1
+name: neura_companion
+description: The ultimate AI-powered wellness companion app.
+version: 1.0.0
 environment:
-  sdk: ">=2.17.0 <4.0.0"
+  sdk: '>=2.17.0 <3.0.0'
 dependencies:
-  flutter:
-    sdk: flutter
-  shared_preferences: ^2.2.0
-  path_provider: ^2.1.2
-  share_plus: ^7.0.0
-  speech_to_text: ^6.3.0
+  http: any
+  provider: ^6.0.0
+  flutter_tts: any
+  hive: any
+  hive_flutter: any
+  get_it: any
+  http: any
+  openai: any
+  sentiment_dart: any
+  flutter_chat_ui: any
+  flutter_local_notifications: any
+  lottie: ^2.2.0
+  confetti: ^0.6.0
+  audioplayers: ^2.0.4
+  health: ^4.0.0
+  shared_preferences: ^2.0.15
+  flutter_svg: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  integration_test:
+    sdk: flutter
 flutter:
-  uses-material-design: true
+  assets:
+    - assets/lottie/genie_lamp.json
+    - assets/sounds/confetti_burst.mp3
+    - assets/icons/
