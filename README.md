@@ -1,13 +1,11 @@
+
 # Neuro Companion
 
-Neuro Companion is an AI-powered mental wellness and productivity app built using Flutter. It
-includes modules for meditation, sleep tracking, CBT, community engagement, wearable health
-tracking, and more.
+Neuro Companion is an AI-powered mental wellness and productivity app built using Flutter. It includes modules for meditation, sleep tracking, CBT, community engagement, wearable health tracking, and more.
 
 ## 🚀 Features
-
 - AI Chatbot and Journal Assistant
-- Guided Meditation and Breath-work
+- Guided Meditation and Breathwork
 - Sleep Tracker and CBT Exercises
 - Wearable Device Integration
 - Gamification and Rewards
@@ -16,13 +14,11 @@ tracking, and more.
 ## 📦 Installation Instructions
 
 ### Prerequisites
-
 - Flutter SDK: https://flutter.dev/docs/get-started/install
 - Dart SDK (comes with Flutter)
 - Android Studio or VS Code (recommended)
 
 ### Getting Started
-
 1. Clone or download this repository.
 2. Run `flutter pub get` to install dependencies.
 3. Connect your Android/iOS device or start an emulator.
@@ -32,9 +28,7 @@ tracking, and more.
    ```
 
 ## 📁 Assets
-
 - Sound and image assets located under `assets/`
 
 ## 📜 License
-
 MIT License
