@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+BEGIN:VEVENT
+UID:02f9deae-ff17-4420-88bd-31e66e5d4a20
+DTSTAMP:20250511T000359Z
+DTSTART:20250521T140000Z
+DTEND:20250521T150000Z
+SUMMARY:Plugin Verifier and API Compatibility Maintenance
+LOCATION:https://youtube.com/live/cpGvA_Wf5Zo
+DESCRIPTION:Discover how the Plugin Verifier ensures plugin compatibility across JetBrains IDEs\, verifying full functionality with the latest versions. 
+END:VEVENT
+END:VCALENDAR
