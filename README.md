@@ -1,2 +1,2 @@
-# neura_companion_complete
-
+# Neural Companion
+a whole bunch of added files to my app
