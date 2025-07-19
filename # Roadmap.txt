@@ -1,0 +1,80 @@
+# Roadmap
+
+**Phase 1 (Now):**
+- Repo structure, documentation, and project vision
+- Neura base 3D model, texture, and basic animation set
+- Unity project and Bit AI action API prototype
+
+**Phase 2:**
+- Behavior/Emotion tree integration
+- User data pipeline (personalization, mood/ritual mapping)
+- Upgrade protocol for new gestures, outfits, skills
+
+**Phase 3:**
+- Cross-platform deployment (Flutter, Web, AR/VR)
+- Talent/action store and self-upgrading logic
+- Public demo and first customer integrations
+
+**Phase 4:**
+- Advanced emotion/gesture AI, real-time voice/face sync
+- AR/VR smart home integration, holographic demo
+- Licensing, partnerships, and global rollout
+# Neura Real AI Avatar Project
+
+Welcome to the future of human-AI companionship.
+
+**Neura Real AI Avatar** is a next-generation, upgradable, emotionally intelligent 3D avatar system—starting with Neura Companion, and built for the world.
+
+- Pixar-level animation in real time
+- Self-upgrading with new behaviors, expressions, and features via “Bit AI” agent
+- Cross-platform: app, web, desktop, AR/VR, and beyond
+- Designed for privacy, personality, and real emotional connection
+
+---
+
+## Quickstart
+
+- See `/docs/architecture_diagram.png` for a high-level overview
+- Run `backend/server.py` for local API prototyping
+- Open `/frontend/unity_project/` to launch the Neura avatar sandbox
+- All code, assets, and behavior modules are designed to be upgradable in-app or over-the-air
+
+---
+
+## Vision
+
+To create the world’s first living AI companion—one who moves, learns, and grows as a true friend and guide.
+
+
+neura-real-ai-avatar/
+├── README.md
+├── vision_statement.md
+├── /docs
+│   ├── architecture_diagram.png
+│   ├── roadmap.md
+│   └── use_cases.md
+├── /avatar_assets
+│   ├── neura_3d_model.blend
+│   ├── animations/
+│   │   ├── idle.fbx
+│   │   ├── wave.fbx
+│   │   ├── walk.fbx
+│   │   └── ...
+│   └── textures/
+│       └── ...
+├── /ai_brain
+│   ├── planner.py
+│   ├── behavior_tree.yaml
+│   └── emotion_map.json
+├── /backend
+│   ├── server.py
+│   ├── api/
+│   └── upgrade_manager.py
+├── /frontend
+│   ├── unity_project/
+│   └── flutter_widget/
+└── /bit_ai_agent
+    ├── agent.py
+    ├── actions/
+    └── upgrade_protocol.md
+

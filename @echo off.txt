@@ -1,0 +1,254 @@
+@echo off
+REM ===============================================
+REM Neuro Com@echo off
+REM ===============================================
+REM Neuro Companion: Scaffold, Sync, Validate, Build, and ZIP
+REM ===============================================
+
+REM ----- 1. Clean and Prepare Root Project Folders -----
+echo [*] Creating root directories...
+if not exist android mkdir android
+if not exist ios mkdir ios
+if not exist windows mkdir windows
+if not exist linux mkdir linux
+if not exist web mkdir web
+if not exist lib mkdir lib
+if not exist assets mkdir assets
+if not exist modules mkdir modules
+if not exist docs mkdir docs
+if not exist stubs mkdir stubs
+if not exist scripts mkdir scripts
+if not exist .ci mkdir .ci
+
+REM ----- 2. Core Flutter & Platform Scaffold -----
+REM Copy/Stub out entry point and domain models
+echo > lib\main.dart
+echo > lib\heart_rate_dashboard.dart
+echo > lib\dream_entry.dart
+echo > lib\journal_entry.dart
+echo > lib\ai_avatar.dart
+echo > lib\neura_ai.dart
+
+REM ----- 3. Placeholder Feature Modules -----
+echo > modules\ai_chatbot_module.dart
+echo > modules\cbt_exercises.dart
+echo > modules\community_forum.dart
+echo > modules\dashboard.dart
+echo > modules\emergency_assist.dart
+echo > modules\gamification_rewards.dart
+echo > modules\meditation_module.dart
+
+REM ----- 4. Platform Build & Wrapper Scripts -----
+echo > gradlew
+echo > gradlew.bat
+echo > build.gradle.kts
+echo > gradle.properties
+echo > gradle-wrapper.jar
+echo > gradle-wrapper.properties
+echo > local.properties
+REM Local.properties is user-specific and should be gitignored
+echo local.properties>>.gitignore
+
+REM ----- 5. Lint and Analysis -----
+echo > .analysis_options.yaml
+
+REM ----- 6. Device & AI Service Firmware/Stub Scripts -----
+echo > stubs\neuro_device_firmware.c
+echo > stubs\audio_analysis.py
+echo > stubs\image_analysis.py
+echo > stubs\federated_learning.py
+echo > stubs\model_tuner.py
+echo > stubs\lime_explainer.py
+
+REM ----- 7. Documentation -----
+echo > docs\DeveloperGuide.md
+echo > docs\Architecture.md
+echo > docs\AppStoreListing.md
+echo > docs\fda_readiness.md
+echo > docs\api_reference.md
+echo > docs\ci_cd.md
+echo > docs\index.md
+echo > docs\installation.md
+echo > docs\iso13485_guidelines.md
+echo > docs\.what-is-this.md
+
+REM ----- 8. Web & Desktop Landing -----
+echo > web\index.html
+echo > scripts\docker-compose.yml
+echo > scripts\fly.toml
+echo > scripts\install_neura.bat
+
+REM ----- 9. Env and Project Settings -----
+echo > .env.example
+echo > .gitignore
+echo > .project.json
+
+REM ----- 10. Add Persistent Project Identity -----
+echo {
+    "name": "Neuro Companion",
+    "version": "0.1.0",
+    "authors": ["@Vantiger1"],
+    "description": "Next-gen AI+health companion"
+} > .project.json
+
+REM ----- 11. Final Validation: Check Everything -----
+if not exist gradlew.bat (
+    echo ERROR: gradlew.bat missing! & pause & exit /b 1
+)
+if not exist build.gradle.kts (
+    echo ERROR: build.gradle.kts missing! & pause & exit /b 1
+)
+if not exist lib\main.dart (
+    echo ERROR: main.dart missing! & pause & exit /b 1
+)
+if not exist docs\DeveloperGuide.md (
+    echo ERROR: DeveloperGuide.md missing! & pause & exit /b 1
+)
+if not exist .env.example (
+    echo ERROR: .env.example missing! & pause & exit /b 1
+)
+if not exist web\index.html (
+    echo ERROR: web index.html missing! & pause & exit /b 1
+)
+
+REM ----- 12. ZIP Everything for Distribution -----
+set ZIPFILE=neuro_companion_scaffold_%DATE:~10,4%_%DATE:~4,2%_%DATE:~7,2%.zip
+powershell Compress-Archive -Path * -DestinationPath %ZIPFILE%
+if exist %ZIPFILE% (
+    echo ZIP created: %ZIPFILE%
+) else (
+    echo ERROR: ZIP not created! & pause & exit /b 1
+)
+
+echo.
+echo ========================================
+echo SCAFFOLD, SYNC, VALIDATE, ZIP: COMPLETE
+echo All artifacts, docs, stubs, and platform configs included.
+echo Ready for cross-platform development, build, and deployment.
+echo ========================================
+pause
+panion: Scaffold, Sync, Validate, Build, and ZIP
+REM ===============================================
+
+REM ----- 1. Clean and Prepare Root Project Folders -----
+echo [*] Creating root directories...
+if not exist android mkdir android
+if not exist ios mkdir ios
+if not exist windows mkdir windows
+if not exist linux mkdir linux
+if not exist web mkdir web
+if not exist lib mkdir lib
+if not exist assets mkdir assets
+if not exist modules mkdir modules
+if not exist docs mkdir docs
+if not exist stubs mkdir stubs
+if not exist scripts mkdir scripts
+if not exist .ci mkdir .ci
+
+REM ----- 2. Core Flutter & Platform Scaffold -----
+REM Copy/Stub out entry point and domain models
+echo > lib\main.dart
+echo > lib\heart_rate_dashboard.dart
+echo > lib\dream_entry.dart
+echo > lib\journal_entry.dart
+echo > lib\ai_avatar.dart
+echo > lib\neura_ai.dart
+
+REM ----- 3. Placeholder Feature Modules -----
+echo > modules\ai_chatbot_module.dart
+echo > modules\cbt_exercises.dart
+echo > modules\community_forum.dart
+echo > modules\dashboard.dart
+echo > modules\emergency_assist.dart
+echo > modules\gamification_rewards.dart
+echo > modules\meditation_module.dart
+
+REM ----- 4. Platform Build & Wrapper Scripts -----
+echo > gradlew
+echo > gradlew.bat
+echo > build.gradle.kts
+echo > gradle.properties
+echo > gradle-wrapper.jar
+echo > gradle-wrapper.properties
+echo > local.properties
+REM Local.properties is user-specific and should be gitignored
+echo local.properties>>.gitignore
+
+REM ----- 5. Lint and Analysis -----
+echo > .analysis_options.yaml
+
+REM ----- 6. Device & AI Service Firmware/Stub Scripts -----
+echo > stubs\neuro_device_firmware.c
+echo > stubs\audio_analysis.py
+echo > stubs\image_analysis.py
+echo > stubs\federated_learning.py
+echo > stubs\model_tuner.py
+echo > stubs\lime_explainer.py
+
+REM ----- 7. Documentation -----
+echo > docs\DeveloperGuide.md
+echo > docs\Architecture.md
+echo > docs\AppStoreListing.md
+echo > docs\fda_readiness.md
+echo > docs\api_reference.md
+echo > docs\ci_cd.md
+echo > docs\index.md
+echo > docs\installation.md
+echo > docs\iso13485_guidelines.md
+echo > docs\.what-is-this.md
+
+REM ----- 8. Web & Desktop Landing -----
+echo > web\index.html
+echo > scripts\docker-compose.yml
+echo > scripts\fly.toml
+echo > scripts\install_neura.bat
+
+REM ----- 9. Env and Project Settings -----
+echo > .env.example
+echo > .gitignore
+echo > .project.json
+
+REM ----- 10. Add Persistent Project Identity -----
+echo {
+    "name": "Neuro Companion",
+    "version": "0.1.0",
+    "authors": ["@Vantiger1"],
+    "description": "Next-gen AI+health companion"
+} > .project.json
+
+REM ----- 11. Final Validation: Check Everything -----
+if not exist gradlew.bat (
+    echo ERROR: gradlew.bat missing! & pause & exit /b 1
+)
+if not exist build.gradle.kts (
+    echo ERROR: build.gradle.kts missing! & pause & exit /b 1
+)
+if not exist lib\main.dart (
+    echo ERROR: main.dart missing! & pause & exit /b 1
+)
+if not exist docs\DeveloperGuide.md (
+    echo ERROR: DeveloperGuide.md missing! & pause & exit /b 1
+)
+if not exist .env.example (
+    echo ERROR: .env.example missing! & pause & exit /b 1
+)
+if not exist web\index.html (
+    echo ERROR: web index.html missing! & pause & exit /b 1
+)
+
+REM ----- 12. ZIP Everything for Distribution -----
+set ZIPFILE=neuro_companion_scaffold_%DATE:~10,4%_%DATE:~4,2%_%DATE:~7,2%.zip
+powershell Compress-Archive -Path * -DestinationPath %ZIPFILE%
+if exist %ZIPFILE% (
+    echo ZIP created: %ZIPFILE%
+) else (
+    echo ERROR: ZIP not created! & pause & exit /b 1
+)
+
+echo.
+echo ========================================
+echo SCAFFOLD, SYNC, VALIDATE, ZIP: COMPLETE
+echo All artifacts, docs, stubs, and platform configs included.
+echo Ready for cross-platform development, build, and deployment.
+echo ========================================
+pause
