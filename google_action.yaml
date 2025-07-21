@@ -1,0 +1,49 @@
+name: "Neuro Companion"
+version: "1.0"
+locale: "en"
+project_id: "neuro-companion"
+description: "Voice-controlled AI wellness assistant"
+actions:
+  - name: MAIN
+    intent: actions.intent.MAIN
+    trigger:
+      query_patterns:
+        - "talk to Neuro Companion"
+    fulfillment:
+      webhookHandler: "voiceAssistantHook"
+
+  - name: LogMoodIntent
+    intent: neuro.intent.LOG_MOOD
+    trigger:
+      query_patterns:
+        - "log my mood as $Mood"
+        - "I'm feeling $Mood"
+    parameters:
+      - name: Mood
+        type: "@sys.any"
+    fulfillment:
+      webhookHandler: "voiceAssistantHook"
+
+  - name: LogRitualIntent
+    intent: neuro.intent.LOG_RITUAL
+    trigger:
+      query_patterns:
+        - "mark ritual $Ritual complete"
+        - "log my ritual $Ritual"
+    parameters:
+      - name: Ritual
+        type: "@sys.any"
+    fulfillment:
+      webhookHandler: "voiceAssistantHook"
+
+  - name: GetSummaryIntent
+    intent: neuro.intent.GET_SUMMARY
+    trigger:
+      query_patterns:
+        - "what's my mood summary"
+        - "give me my recent moods"
+    fulfillment:
+      webhookHandler: "voiceAssistantHook"
+
+webhook:
+  url: "https://YOUR_CLOUD_FUNCTION_URL"
