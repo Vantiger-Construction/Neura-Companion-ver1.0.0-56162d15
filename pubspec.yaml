@@ -1,18 +1,3 @@
-name: neuracompanionapp
-description: "Neura Companion App"
-publish_to: 'none' # prevent accidental publishing
-version: 1.0.0+1
-
-environment:
-  sdk: ">=2.17.0 <3.0.0"
-  flutter: ">=3.7.0"
-
-dependencies:
-  flutter:
-    sdk: flutter
-  # Add other dependencies as needed, e.g.:
-  # table_calendar: ^3.0.0
-  # fl_chart: ^0.45.1
-
 flutter:
-  uses-material-design: true
+  assets:
+    - assets/animations/neura_portrait.png
