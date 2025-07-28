@@ -1,1131 +1,1129 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "(gdb) Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/path/to/gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ]
-        },
-
-
-        {
-            "name": "Neura_Companion_Merged",
-            "cwd": "Neura_Companion_Merged",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "Neura_Companion_Merged (profile mode)",
-            "cwd": "Neura_Companion_Merged",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "Neura_Companion_Merged (release mode)",
-            "cwd": "Neura_Companion_Merged",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "Neura_Companion_Merged_1",
-            "cwd": "Neura_Companion_Merged_1",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "Neura_Companion_Merged_1 (profile mode)",
-            "cwd": "Neura_Companion_Merged_1",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "Neura_Companion_Merged_1 (release mode)",
-            "cwd": "Neura_Companion_Merged_1",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "Neura_Companion_Merged_2",
-            "cwd": "Neura_Companion_Merged_2",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "Neura_Companion_Merged_2 (profile mode)",
-            "cwd": "Neura_Companion_Merged_2",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "Neura_Companion_Merged_2 (release mode)",
-            "cwd": "Neura_Companion_Merged_2",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "Neura_Companion_Merged_3",
-            "cwd": "Neura_Companion_Merged_3",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "Neura_Companion_Merged_3 (profile mode)",
-            "cwd": "Neura_Companion_Merged_3",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "Neura_Companion_Merged_3 (release mode)",
-            "cwd": "Neura_Companion_Merged_3",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "Neuro_Companion_Complete",
-            "cwd": "Neuro_Companion_Complete",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "Neuro_Companion_Complete (profile mode)",
-            "cwd": "Neuro_Companion_Complete",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "Neuro_Companion_Complete (release mode)",
-            "cwd": "Neuro_Companion_Complete",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "github_source",
-            "cwd": "neura_companion_final_full_bundle (1)\\github_source",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "github_source (profile mode)",
-            "cwd": "neura_companion_final_full_bundle (1)\\github_source",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "github_source (release mode)",
-            "cwd": "neura_companion_final_full_bundle (1)\\github_source",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "a11y_assessments",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\a11y_assessments",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "a11y_assessments (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\a11y_assessments",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "a11y_assessments (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\a11y_assessments",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "automated_tests",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\automated_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "automated_tests (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\automated_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "automated_tests (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\automated_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "bots",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\bots",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "customer_testing",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\customer_testing",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "devicelab",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\devicelab",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "forbidden_from_release_tests",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\forbidden_from_release_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "manual_tests",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\manual_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "manual_tests (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\manual_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "manual_tests (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\manual_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "missing_dependency_tests",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\missing_dependency_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "missing_dependency_tests (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\missing_dependency_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "missing_dependency_tests (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\missing_dependency_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "snippets",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\snippets",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "tools",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\tools",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "tracing_tests",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\tracing_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "tracing_tests (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\tracing_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "tracing_tests (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\dev\\tracing_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "api",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\api",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "api (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\api",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "api (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\api",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_view",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\flutter_view",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_view (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\flutter_view",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_view (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\flutter_view",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "hello_world",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\hello_world",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "hello_world (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\hello_world",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "hello_world (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\hello_world",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "image_list",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\image_list",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "image_list (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\image_list",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "image_list (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\image_list",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "layers",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\layers",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "layers (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\layers",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "layers (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\layers",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "platform_channel",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "platform_channel (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "platform_channel (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "platform_channel_swift",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel_swift",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "platform_channel_swift (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel_swift",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "platform_channel_swift (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel_swift",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "platform_view",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_view",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "platform_view (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_view",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "platform_view (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_view",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "splash",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\splash",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "splash (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\splash",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "splash (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\splash",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "texture",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\texture",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "texture (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\texture",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "texture (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\examples\\texture",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_driver",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_driver",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_driver (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_driver",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_driver (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_driver",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_goldens",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_goldens",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_goldens (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_goldens",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_goldens (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_goldens",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_localizations",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_localizations",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_localizations (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_localizations",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_localizations (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_localizations",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_test",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_test",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_test (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_test",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_test (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_test",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_tools",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_tools",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_web_plugins",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_web_plugins",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_web_plugins (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_web_plugins",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_web_plugins (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_web_plugins",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "fuchsia_remote_debug_protocol",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\fuchsia_remote_debug_protocol",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "integration_test",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\integration_test",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "integration_test (profile mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\integration_test",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "integration_test (release mode)",
-            "cwd": "Neura_Companion_Merged\\flutter\\packages\\integration_test",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "a11y_assessments",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\a11y_assessments",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "a11y_assessments (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\a11y_assessments",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "a11y_assessments (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\a11y_assessments",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "automated_tests",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\automated_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "automated_tests (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\automated_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "automated_tests (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\automated_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "bots",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\bots",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "customer_testing",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\customer_testing",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "devicelab",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\devicelab",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "forbidden_from_release_tests",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\forbidden_from_release_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "manual_tests",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\manual_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "manual_tests (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\manual_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "manual_tests (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\manual_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "missing_dependency_tests",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\missing_dependency_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "missing_dependency_tests (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\missing_dependency_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "missing_dependency_tests (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\missing_dependency_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "snippets",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\snippets",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "tools",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\tools",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "tracing_tests",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\tracing_tests",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "tracing_tests (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\tracing_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "tracing_tests (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\dev\\tracing_tests",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "api",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\api",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "api (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\api",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "api (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\api",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_view",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\flutter_view",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_view (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\flutter_view",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_view (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\flutter_view",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "hello_world",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\hello_world",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "hello_world (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\hello_world",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "hello_world (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\hello_world",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "image_list",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\image_list",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "image_list (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\image_list",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "image_list (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\image_list",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "layers",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\layers",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "layers (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\layers",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "layers (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\layers",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "platform_channel",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "platform_channel (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "platform_channel (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "platform_channel_swift",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel_swift",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "platform_channel_swift (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel_swift",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "platform_channel_swift (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel_swift",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "platform_view",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_view",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "platform_view (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_view",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "platform_view (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_view",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "splash",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\splash",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "splash (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\splash",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "splash (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\splash",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "texture",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\texture",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "texture (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\texture",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "texture (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\examples\\texture",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_driver",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_driver",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_driver (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_driver",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_driver (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_driver",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_goldens",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_goldens",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_goldens (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_goldens",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_goldens (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_goldens",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_localizations",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_localizations",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_localizations (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_localizations",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_localizations (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_localizations",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_test",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_test",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_test (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_test",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_test (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_test",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "flutter_tools",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_tools",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_web_plugins",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_web_plugins",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "flutter_web_plugins (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_web_plugins",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "flutter_web_plugins (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_web_plugins",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
-            "name": "fuchsia_remote_debug_protocol",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\fuchsia_remote_debug_protocol",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "integration_test",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\integration_test",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "integration_test (profile mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\integration_test",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "integration_test (release mode)",
-            "cwd": "Neuro_Companion_Complete\\flutter\\packages\\integration_test",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "configurations": [
+    {
+      "name": "(gdb) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
         }
-    ]
+      ]
+    },
+    {
+      "name": "Neura_Companion_Merged",
+      "cwd": "Neura_Companion_Merged",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "Neura_Companion_Merged (profile mode)",
+      "cwd": "Neura_Companion_Merged",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Neura_Companion_Merged (release mode)",
+      "cwd": "Neura_Companion_Merged",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "Neura_Companion_Merged_1",
+      "cwd": "Neura_Companion_Merged_1",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "Neura_Companion_Merged_1 (profile mode)",
+      "cwd": "Neura_Companion_Merged_1",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Neura_Companion_Merged_1 (release mode)",
+      "cwd": "Neura_Companion_Merged_1",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "Neura_Companion_Merged_2",
+      "cwd": "Neura_Companion_Merged_2",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "Neura_Companion_Merged_2 (profile mode)",
+      "cwd": "Neura_Companion_Merged_2",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Neura_Companion_Merged_2 (release mode)",
+      "cwd": "Neura_Companion_Merged_2",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "Neura_Companion_Merged_3",
+      "cwd": "Neura_Companion_Merged_3",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "Neura_Companion_Merged_3 (profile mode)",
+      "cwd": "Neura_Companion_Merged_3",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Neura_Companion_Merged_3 (release mode)",
+      "cwd": "Neura_Companion_Merged_3",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "Neuro_Companion_Complete",
+      "cwd": "Neuro_Companion_Complete",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "Neuro_Companion_Complete (profile mode)",
+      "cwd": "Neuro_Companion_Complete",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Neuro_Companion_Complete (release mode)",
+      "cwd": "Neuro_Companion_Complete",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "github_source",
+      "cwd": "neura_companion_final_full_bundle (1)\\github_source",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "github_source (profile mode)",
+      "cwd": "neura_companion_final_full_bundle (1)\\github_source",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "github_source (release mode)",
+      "cwd": "neura_companion_final_full_bundle (1)\\github_source",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "a11y_assessments",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\a11y_assessments",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "a11y_assessments (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\a11y_assessments",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "a11y_assessments (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\a11y_assessments",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "automated_tests",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\automated_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "automated_tests (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\automated_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "automated_tests (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\automated_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "bots",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\bots",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "customer_testing",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\customer_testing",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "devicelab",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\devicelab",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "forbidden_from_release_tests",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\forbidden_from_release_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "manual_tests",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\manual_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "manual_tests (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\manual_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "manual_tests (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\manual_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "missing_dependency_tests",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\missing_dependency_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "missing_dependency_tests (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\missing_dependency_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "missing_dependency_tests (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\missing_dependency_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "snippets",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\snippets",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "tools",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\tools",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "tracing_tests",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\tracing_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "tracing_tests (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\tracing_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "tracing_tests (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\tracing_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "api",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\api",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "api (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\api",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "api (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\api",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_view",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\flutter_view",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_view (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\flutter_view",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_view (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\flutter_view",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "hello_world",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\hello_world",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "hello_world (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\hello_world",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "hello_world (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\hello_world",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "image_list",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\image_list",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "image_list (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\image_list",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "image_list (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\image_list",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "layers",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\layers",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "layers (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\layers",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "layers (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\layers",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "platform_channel",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "platform_channel (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "platform_channel (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "platform_channel_swift",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel_swift",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "platform_channel_swift (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel_swift",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "platform_channel_swift (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_channel_swift",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "platform_view",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_view",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "platform_view (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_view",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "platform_view (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\platform_view",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "splash",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\splash",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "splash (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\splash",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "splash (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\splash",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "texture",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\texture",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "texture (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\texture",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "texture (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\examples\\texture",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_driver",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_driver",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_driver (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_driver",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_driver (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_driver",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_goldens",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_goldens",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_goldens (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_goldens",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_goldens (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_goldens",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_localizations",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_localizations",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_localizations (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_localizations",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_localizations (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_localizations",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_test",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_test",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_test (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_test",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_test (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_test",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_tools",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_tools",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_web_plugins",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_web_plugins (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_web_plugins",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_web_plugins (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\flutter_web_plugins",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "fuchsia_remote_debug_protocol",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\fuchsia_remote_debug_protocol",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "integration_test",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\integration_test",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "integration_test (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\integration_test",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "integration_test (release mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\packages\\integration_test",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "a11y_assessments",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\a11y_assessments",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "a11y_assessments (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\a11y_assessments",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "a11y_assessments (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\a11y_assessments",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "automated_tests",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\automated_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "automated_tests (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\automated_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "automated_tests (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\automated_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "bots",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\bots",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "customer_testing",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\customer_testing",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "devicelab",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\devicelab",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "forbidden_from_release_tests",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\forbidden_from_release_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "manual_tests",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\manual_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "manual_tests (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\manual_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "manual_tests (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\manual_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "missing_dependency_tests",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\missing_dependency_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "missing_dependency_tests (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\missing_dependency_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "missing_dependency_tests (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\missing_dependency_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "snippets",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\snippets",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "tools",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\tools",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "tracing_tests",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\tracing_tests",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "tracing_tests (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\tracing_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "tracing_tests (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\dev\\tracing_tests",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "api",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\api",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "api (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\api",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "api (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\api",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_view",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\flutter_view",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_view (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\flutter_view",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_view (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\flutter_view",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "hello_world",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\hello_world",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "hello_world (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\hello_world",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "hello_world (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\hello_world",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "image_list",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\image_list",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "image_list (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\image_list",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "image_list (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\image_list",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "layers",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\layers",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "layers (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\layers",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "layers (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\layers",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "platform_channel",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "platform_channel (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "platform_channel (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "platform_channel_swift",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel_swift",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "platform_channel_swift (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel_swift",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "platform_channel_swift (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_channel_swift",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "platform_view",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_view",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "platform_view (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_view",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "platform_view (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\platform_view",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "splash",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\splash",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "splash (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\splash",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "splash (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\splash",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "texture",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\texture",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "texture (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\texture",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "texture (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\examples\\texture",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_driver",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_driver",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_driver (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_driver",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_driver (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_driver",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_goldens",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_goldens",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_goldens (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_goldens",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_goldens (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_goldens",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_localizations",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_localizations",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_localizations (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_localizations",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_localizations (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_localizations",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_test",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_test",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_test (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_test",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_test (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_test",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_tools",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_tools",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_web_plugins",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_web_plugins (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_web_plugins",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_web_plugins (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\flutter_web_plugins",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "fuchsia_remote_debug_protocol",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\fuchsia_remote_debug_protocol",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "integration_test",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\integration_test",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "integration_test (profile mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\integration_test",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "integration_test (release mode)",
+      "cwd": "Neuro_Companion_Complete\\flutter\\packages\\integration_test",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ],
+  "version": "0.2.0"
 }
