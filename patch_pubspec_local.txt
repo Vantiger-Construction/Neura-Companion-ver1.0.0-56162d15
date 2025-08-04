@@ -1,0 +1,9 @@
+
+dependencies:
+  path_provider: ^2.0.14
+  # firebase_core: removed
+  # cloud_firestore: removed
+  # firebase_auth: removed
+  # firebase_storage: removed
+  # firebase_analytics: removed
+  # firebase_crashlytics: removed

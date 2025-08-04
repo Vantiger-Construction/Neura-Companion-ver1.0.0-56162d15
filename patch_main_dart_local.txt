@@ -1,0 +1,16 @@
+
+import 'core/firebase_replacement/local_auth_manager.dart';
+import 'core/firebase_replacement/local_data_store.dart';
+import 'core/firebase_replacement/local_file_storage.dart';
+import 'core/firebase_replacement/error_tracker_local.dart';
+import 'core/firebase_replacement/usage_insights_tracker.dart';
+import 'core/firebase_replacement/sync_scheduler.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await LocalDataStore.init(); // Ensures local DB is ready
+  ErrorTrackerLocal.initialize();
+  UsageInsightsTracker.startSession();
+
+  runApp(MyApp());
+}
