@@ -1,0 +1,29 @@
+lib/
+  └── main.dart
+  └── onboarding_screen.dart
+  └── crash_logger.dart
+  └── neura_app_localization.dart
+  └── modules/
+  └── widgets/
+  └── services/
+  └── themes/
+assets/
+  └── lottie/
+  └── audio/
+  └── video/
+  └── images/
+  └── fonts/
+lib/l10n/
+  └── intl_en.arb
+  └── intl_es.arb
+  └── intl_fr.arb
+android/app/
+  └── build.gradle
+  └── src/main/AndroidManifest.xml
+firebase/
+  └── firebase_options.dart
+  └── firestore_rules.rules
+  └── firebase.json
+web/
+  └── index.html
+  └── favicon.png
