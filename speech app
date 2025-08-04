@@ -1,0 +1,597 @@
+
+pip install gTTS
+
+pip install SpeechRecognition
+
+pip install gTTS
+sudo apt-get install mpg321  # On Debian-based systems like Ubuntu
+
+# Import the necessary libraries
+from googletrans import Translator
+import speech_recognition as sr
+from gtts import gTTS
+import sqlite3
+import os
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+# Initialize the translator and recognizer
+translator = Translator()
+recognizer = sr.Recognizer()
+sia = SentimentIntensityAnalyzer()
+
+# Connect to the database
+conn = sqlite3.connect('language_learning.db')
+c = conn.cursor()
+
+# Create table if it doesn't exist
+c.execute('''CREATE TABLE IF NOT EXISTS progress
+             (username TEXT, language TEXT, lesson TEXT, score INTEGER)''')
+
+# Set the language to learn
+language_to_learn = 'es'  # Spanish
+
+# Common phrases in different languages
+common_phrases = {
+    'es': ['¿Cómo estás?', 'Buenos días', 'Buenas noches', 'Gracias', 'Lo siento'],
+    'fr': ['Comment ça va?', 'Bonjour', 'Bonne nuit', 'Merci', 'Je suis désolé'],
+    'de': ['Wie geht es dir?', 'Guten Morgen', 'Gute Nacht', 'Danke', 'Es tut mir leid'],
+    # Add more languages here
+}
+
+# Function to start a learning session
+def start_session(username, language_to_learn):
+    # Recognize speech
+    with sr.Microphone() as source:
+        print("Speak a sentence in English.")
+        audio = recognizer.listen(source)
+        text = recognizer.recognize_google(audio)
+
+    # Translate the text
+    translation = translator.translate(text, dest=language_to_learn)
+
+    # Use Text-to-Speech to provide pronunciation example
+    tts = gTTS(text=translation.text, lang=language_to_learn)
+    tts.save("example.mp3")
+    os.system("mpg321 example.mp3")
+
+    # Perform sentiment analysis on the original text
+    sentiment = sia.polarity_scores(text)
+
+    # Display the original and translated text, and the sentiment
+    print(f"You said: {text}")
+    print(f"In {language_to_learn}, you would say: {translation.text}")
+    print(f"The sentiment of your text is: {sentiment}")
+
+    # Update the user's progress in the database
+    c.execute("INSERT INTO progress VALUES (?, ?, ?, ?)",
+              (username, language_to_learn, text, 1))
+    conn.commit()
+
+    # If the text is a common phrase, provide additional information
+    if text in common_phrases[language_to_learn]:
+        print(f"'{text}' is a common phrase in {language_to_learn}.")
+
+# Close the database connection
+conn.close()
+
+
+pip install googletrans==4.0.0-rc1
+pip install nltk
+pip install pygame
+
+from gtts import gTTS
+import os
+
+# Function to convert text to speech
+def text_to_speech(text, lang, filename):
+    tts = gTTS(text=text, lang=lang)
+    tts.save(filename)
+
+# Function to play the audio file
+def play_audio(filename):
+    os.system(f"mpg321 {filename}")
+
+# Example usage
+text_to_speech("Hola, ¿cómo estás?", 'es', "greeting.mp3")
+play_audio("greeting.mp3")
+
+
+
+
+
+
+
+# Import the necessary libraries
+from ai_language_learning import LanguageLearner
+
+# Initialize the language learner
+learner = LanguageLearner()
+
+# Set the language to learn
+learner.set_language('Spanish')
+
+# Start a learning session
+session = learner.start_session()
+
+# Loop through the session
+for lesson in session.get_lessons():
+    # Display the lesson content
+    print(lesson.content)
+    
+    # Wait for the user input
+    user_input = input()
+    
+    # Check the user's answer
+    result = lesson.check_answer(user_input)
+    
+    # Provide feedback
+    if result.is_correct:
+        print("Correct!")
+    else:
+        print(f"Incorrect. The correct answer is {result.correct_answer}")
+
+# End the session
+session.end()
+
+# Import the necessary libraries
+from googletrans import Translator
+import speech_recognition as sr
+
+# Initialize the translator and recognizer
+translator = Translator()
+recognizer = sr.Recognizer()
+
+# Set the language to learn
+language_to_learn = 'es'  # Spanish
+
+# Start a learning session
+print("Starting language learning session. Speak a sentence in English.")
+
+# Recognize speech
+with sr.Microphone() as source:
+    audio = recognizer.listen(source)
+    text = recognizer.recognize_google(audio)
+
+# Translate the text
+translation = translator.translate(text, dest=language_to_learn)
+
+# Display the original and translated text
+print(f"You said: {text}")
+print(f"In {language_to_learn}, you would say: {translation.text}")
+
+# Import the necessary libraries
+from googletrans import Translator
+import speech_recognition as sr
+from gtts import gTTS
+import sqlite3
+import os
+
+# Initialize the translator and recognizer
+translator = Translator()
+recognizer = sr.Recognizer()
+
+# Connect to the database
+conn = sqlite3.connect('language_learning.db')
+c = conn.cursor()
+
+# Create table if it doesn't exist
+c.execute('''CREATE TABLE IF NOT EXISTS progress
+             (language TEXT, lesson TEXT, score INTEGER)''')
+
+# Set the language to learn
+language_to_learn = 'es'  # Spanish
+
+# Start a learning session
+print("Starting language learning session. Speak a sentence in English.")
+
+# Recognize speech
+with sr.Microphone() as source:
+    audio = recognizer.listen(source)
+    text = recognizer.recognize_google(audio)
+
+# Translate the text
+translation = translator.translate(text, dest=language_to_learn)
+
+# Use Text-to-Speech to provide pronunciation example
+tts = gTTS(text=translation.text, lang=language_to_learn)
+tts.save("example.mp3")
+os.system("mpg321 example.mp3")
+
+# Display the original and translated text
+print(f"You said: {text}")
+print(f"In {language_to_learn}, you would say: {translation.text}")
+
+# Update the user's progress in the database
+c.execute("INSERT INTO progress VALUES (?, ?, ?)",
+          (language_to_learn, text, 1))
+conn.commit()
+
+# Close the database connection
+conn.close()
+
+# Import the necessary libraries
+from googletrans import Translator
+import speech_recognition as sr
+from gtts import gTTS
+import sqlite3
+import os
+import tkinter as tk
+from tkinter import messagebox
+
+# Initialize the translator and recognizer
+translator = Translator()
+recognizer = sr.Recognizer()
+
+# Connect to the database
+conn = sqlite3.connect('language_learning.db')
+c = conn.cursor()
+
+# Create table if it doesn't exist
+c.execute('''CREATE TABLE IF NOT EXISTS progress
+             (language TEXT, lesson TEXT, score INTEGER)''')
+
+# Set the language to learn
+language_to_learn = 'es'  # Spanish
+
+# Create the main application window
+root = tk.Tk()
+root.title("Language Learning App")
+
+# Create a label to display the translated text
+label = tk.Label(root, text="")
+label.pack()
+
+# Function to start a learning session
+def start_session():
+    # Recognize speech
+    with sr.Microphone() as source:
+        audio = recognizer.listen(source)
+        text = recognizer.recognize_google(audio)
+
+    # Translate the text
+    translation = translator.translate(text, dest=language_to_learn)
+
+    # Use Text-to-Speech to provide pronunciation example
+    tts = gTTS(text=translation.text, lang=language_to_learn)
+    tts.save("example.mp3")
+    os.system("mpg321 example.mp3")
+
+    # Display the original and translated text
+    label.config(text=f"In {language_to_learn}, you would say: {translation.text}")
+
+    # Update the user's progress in the database
+    c.execute("INSERT INTO progress VALUES (?, ?, ?)",
+              (language_to_learn, text, 1))
+    conn.commit()
+
+# Create a button to start a learning session
+button = tk.Button(root, text="Start Session", command=start_session)
+button.pack()
+
+# Run the application
+root.mainloop()
+
+# Close the database connection
+conn.close()
+
+# Import the necessary libraries
+from sklearn.ensemble import RandomForestRegressor
+import numpy as np
+
+# Initialize the machine learning model
+model = RandomForestRegressor()
+
+# Load the user's past performance data
+# For simplicity, let's assume it's stored in a NumPy array where each row is a lesson,
+# the first column is the user's score for that lesson, and the remaining columns are features of the lesson
+data = np.load('user_data.npy')
+scores = data[:, 0]
+features = data[:, 1:]
+
+# Train the model on the user's past performance data
+model.fit(features, scores)
+
+# Now, when presenting a new lesson, we can predict the user's score
+new_lesson_features = np.array(...)  # Features of the new lesson
+predicted_score = model.predict(new_lesson_features.reshape(1, -1))
+
+# We can use the predicted score to adapt the difficulty of the lesson
+if predicted_score < 0.6:
+    print("This lesson might be too difficult. Let's try an easier one.")
+else:
+    print("This lesson seems to be at the right level of difficulty.")
+
+from sklearn.cluster import KMeans
+
+# Initialize the machine learning model
+model = KMeans(n_clusters=5)
+
+# Load the lesson data
+data = np.load('lesson_data.npy')
+
+# Fit the model to the data
+model.fit(data)
+
+import gym
+from stable_baselines3 import A2C
+
+# Create the environment
+env = gym.make('LanguageLearning-v0')
+
+# Initialize the agent
+model = A2C('MlpPolicy', env, verbose=1)
+
+# Train the agent
+model.learn(total_timesteps=10000)
+
+from flask import Flask, render_template, request, redirect, url_for, session
+from flask_sqlalchemy import SQLAlchemy
+from werkzeug.security import generate_password_hash, check_password_hash
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+app.config['SECRET_KEY'] = 'secret-key'
+db = SQLAlchemy(app)
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(120), nullable=False)
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        hashed_password = generate_password_hash(request.form['password'], method='sha256')
+        new_user = User(username=request.form['username'], password=hashed_password)
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect(url_for('dashboard'))
+    return render_template('register.html')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        user = User.query.filter_by(username=request.form['username']).first()
+        if user and check_password_hash(user.password, request.form['password']):
+            session['username'] = user.username
+            return redirect(url_for('dashboard'))
+    return render_template('login.html')
+
+@app.route('/dashboard')
+def dashboard():
+    if 'username' not in session:
+        return redirect(url_for('login'))
+    return render_template('dashboard.html', username=session['username'])
+
+if __name__ == '__main__':
+    db.create_all()
+    app.run(debug=True)
+
+from flask import Flask, render_template, request, redirect, url_for, session
+from flask_sqlalchemy import SQLAlchemy
+from werkzeug.security import generate_password_hash, check_password_hash
+from googletrans import Translator
+import speech_recognition as sr
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+app.config['SECRET_KEY'] = 'secret-key'
+db = SQLAlchemy(app)
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(120), nullable=False)
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        hashed_password = generate_password_hash(request.form['password'], method='sha256')
+        new_user = User(username=request.form['username'], password=hashed_password)
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect(url_for('dashboard'))
+    return render_template('register.html')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        user = User.query.filter_by(username=request.form['username']).first()
+        if user and check_password_hash(user.password, request.form['password']):
+            session['username'] = user.username
+            return redirect(url_for('dashboard'))
+    return render_template('login.html')
+
+@app.route('/dashboard')
+def dashboard():
+    if 'username' not in session:
+        return redirect(url_for('login'))
+    return render_template('dashboard.html', username=session['username'])
+
+@app.route('/learn', methods=['GET', 'POST'])
+def learn():
+    if 'username' not in session:
+        return redirect(url_for('login'))
+    if request.method == 'POST':
+        # Initialize the translator and recognizer
+        translator = Translator()
+        recognizer = sr.Recognizer()
+
+        # Recognize speech
+        with sr.Microphone() as source:
+            audio = recognizer.listen(source)
+            text = recognizer.recognize_google(audio)
+
+        # Translate the text
+        translation = translator.translate(text, dest='es')
+
+        # Display the original and translated text
+        return render_template('learn.html', original_text=text, translated_text=translation.text)
+    return render_template('learn.html')
+
+if __name__ == '__main__':
+    db.create_all()
+    app.run(debug=True)
+# Import the necessary libraries
+from googletrans import Translator
+import speech_recognition as sr
+import sqlite3
+import os
+
+# Initialize the translator and recognizer
+translator = Translator()
+recognizer = sr.Recognizer()
+
+# Connect to the database
+conn = sqlite3.connect('language_learning.db')
+c = conn.cursor()
+
+# Create table if it doesn't exist
+c.execute('''CREATE TABLE IF NOT EXISTS progress
+             (username TEXT, language TEXT, lesson TEXT, score INTEGER)''')
+
+# Set the language to learn
+language_to_learn = 'es'  # Spanish
+
+# Function to start a learning session
+def start_session(username):
+    # Recognize speech
+    with sr.Microphone() as source:
+        print("Speak a sentence in English.")
+        audio = recognizer.listen(source)
+        text = recognizer.recognize_google(audio)
+
+    # Translate the text
+    translation = translator.translate(text, dest=language_to_learn)
+
+    # Display the original and translated text
+    print(f"You said: {text}")
+    print(f"In {language_to_learn}, you would say: {translation.text}")
+
+    # Update the user's progress in the database
+    c.execute("INSERT INTO progress VALUES (?, ?, ?, ?)",
+              (username, language_to_learn, text, 1))
+    conn.commit()
+
+# Function to check the user's progress
+def check_progress(username):
+    c.execute("SELECT * FROM progress WHERE username = ?", (username,))
+    rows = c.fetchall()
+
+    for row in rows:
+        print(f"Lesson: {row[2]}, Score: {row[3]}")
+
+# Function to provide feedback based on the user's progress
+def provide_feedback(username):
+    c.execute("SELECT AVG(score) FROM progress WHERE username = ?", (username,))
+    avg_score = c.fetchone()[0]
+
+    if avg_score > 0.8:
+        print("Great job! You're ready for more difficult lessons.")
+    elif avg_score > 0.6:
+        print("Good job, but there's room for improvement.")
+    else:
+        print("Keep practicing! You'll get there.")
+
+# Close the database connection
+conn.close()
+
+# Import the necessary libraries
+from googletrans import Translator
+import speech_recognition as sr
+from gtts import gTTS
+import sqlite3
+import os
+
+# Initialize the translator and recognizer
+translator = Translator()
+recognizer = sr.Recognizer()
+
+# Connect to the database
+conn = sqlite3.connect('language_learning.db')
+c = conn.cursor()
+
+# Create table if it doesn't exist
+c.execute('''CREATE TABLE IF NOT EXISTS progress
+             (username TEXT, language TEXT, lesson TEXT, score INTEGER)''')
+
+# Function to start a learning session
+def start_session(username, language_to_learn):
+    # Recognize speech
+    with sr.Microphone() as source:
+        print("Speak a sentence in English.")
+        audio = recognizer.listen(source)
+        text = recognizer.recognize_google(audio)
+
+    # Translate the text
+    translation = translator.translate(text, dest=language_to_learn)
+
+    # Use Text-to-Speech to provide pronunciation example
+    tts = gTTS(text=translation.text, lang=language_to_learn)
+    tts.save("example.mp3")
+    os.system("mpg321 example.mp3")
+
+    # Display the original and translated text
+    print(f"You said: {text}")
+    print(f"In {language_to_learn}, you would say: {translation.text}")
+
+    # Update the user's progress in the database
+    c.execute("INSERT INTO progress VALUES (?, ?, ?, ?)",
+              (username, language_to_learn, text, 1))
+    conn.commit()
+
+# Close the database connection
+conn.close()
+
+# Import the necessary libraries
+from googletrans import Translator
+import speech_recognition as sr
+from gtts import gTTS
+import sqlite3
+import os
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+# Initialize the translator, recognizer, and sentiment analyzer
+translator = Translator()
+recognizer = sr.Recognizer()
+sia = SentimentIntensityAnalyzer()
+
+# Connect to the database
+conn = sqlite3.connect('language_learning.db')
+c = conn.cursor()
+
+# Create table if it doesn't exist
+c.execute('''CREATE TABLE IF NOT EXISTS progress
+             (username TEXT, language TEXT, lesson TEXT, score INTEGER)''')
+
+# Function to start a learning session
+def start_session(username, language_to_learn):
+    # Recognize speech
+    with sr.Microphone() as source:
+        print("Speak a sentence in English.")
+        audio = recognizer.listen(source)
+        text = recognizer.recognize_google(audio)
+
+    # Translate the text
+    translation = translator.translate(text, dest=language_to_learn)
+
+    # Use Text-to-Speech to provide pronunciation example
+    tts = gTTS(text=translation.text, lang=language_to_learn)
+    tts.save("example.mp3")
+    os.system("mpg321 example.mp3")
+
+    # Perform sentiment analysis on the original text
+    sentiment = sia.polarity_scores(text)
+
+    # Display the original and translated text, and the sentiment
+    print(f"You said: {text}")
+    print(f"In {language_to_learn}, you would say: {translation.text}")
+    print(f"The sentiment of your text is: {sentiment}")
+
+    # Update the user's progress in the database
+    c.execute("INSERT INTO progress VALUES (?, ?, ?, ?)",
+              (username, language_to_learn, text, 1))
+    conn.commit()
+
+# Close the database connection
+conn.close()
