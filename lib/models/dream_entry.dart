@@ -10,26 +10,26 @@ class DreamEntry {
   final String moodSummary;
 
   const DreamEntry({
-  required this.id,
-  required this.timestamp,
-  required this.transcript,
-  this.interpretation = '',
-  this.moodSummary = '',
+    required this.id,
+    required this.timestamp,
+    required this.transcript,
+    this.interpretation = '',
+    this.moodSummary = '',
   });
 
   Map<String, dynamic> toMap() => {
-    'id': id,
-    'timestamp': timestamp.toIso8601String(),
-    'transcript': transcript,
-    'interpretation': interpretation,
-    'moodSummary': moodSummary,
-    };
+        'id': id,
+        'timestamp': timestamp.toIso8601String(),
+        'transcript': transcript,
+        'interpretation': interpretation,
+        'moodSummary': moodSummary,
+      };
 
   factory DreamEntry.fromMap(Map<String, dynamic> map) => DreamEntry(
-    id: map['id'] as String,
-    timestamp: DateTime.parse(map['timestamp'] as String),
-    transcript: map['transcript'] as String,
-    interpretation: map['interpretation'] as String? ?? '',
-    moodSummary: map['moodSummary'] as String? ?? '',
-    );
+        id: map['id'] as String,
+        timestamp: DateTime.parse(map['timestamp'] as String),
+        transcript: map['transcript'] as String,
+        interpretation: map['interpretation'] as String? ?? '',
+        moodSummary: map['moodSummary'] as String? ?? '',
+      );
 }

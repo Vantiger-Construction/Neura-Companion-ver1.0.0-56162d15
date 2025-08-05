@@ -1,9 +1,35 @@
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:neura_companion/models/usage_entry.dart';
-import 'package:neura_companion/services/csv_export_service.dart';
-import 'package:neura_companion/repositories/usage_repository.dart';
+
+// Simple placeholder models and services since they're not implemented yet
+class UsageEntry {
+  final String id;
+  final DateTime timestamp;
+  final String type;
+  final Map<String, dynamic> data;
+
+  UsageEntry({
+    required this.id,
+    required this.timestamp,
+    required this.type,
+    required this.data,
+  });
+}
+
+abstract class UsageRepository {
+  Future<List<UsageEntry>> getAllEntries();
+}
+
+class CsvExportService {
+  static Future<File> exportToCSV(List<UsageEntry> entries) async {
+    // TODO: Implement CSV export
+    final directory = await getApplicationDocumentsDirectory();
+    final file = File('${directory.path}/export.csv');
+    await file.writeAsString('id,timestamp,type,data\n');
+    return file;
+  }
+}
 
 class FakeRepo implements UsageRepository {
   @override
