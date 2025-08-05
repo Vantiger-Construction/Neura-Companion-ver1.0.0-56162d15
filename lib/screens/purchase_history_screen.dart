@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'package:flutter/material.dart';
 import '../services/billing_service.dart';
 
@@ -18,17 +17,15 @@ class _PurchaseHistoryScreenState extends State<PurchaseHistoryScreen> {
   _loadHistory();
   }
 
-  // 🛡️ Error-handled
-try {
   Future<void> _loadHistory() async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   await _billing.init();
   // TODO: load past purchases into _purchases

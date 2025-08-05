@@ -18,7 +18,7 @@ class NeuraMemory {
     };
 
     _memoryLog.add(memory);
-    print('Memory saved: ' + jsonEncode(memory));
+    debugPrint('Memory saved: ' + jsonEncode(memory));
   }
 
   List<Map<String, dynamic>> getAll() => _memoryLog;

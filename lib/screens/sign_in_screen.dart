@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 import 'sign_up_screen.dart';
@@ -20,7 +19,7 @@ class _SignInScreenState extends State<SignInScreen> {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
   setState(() { _loading = true; _error = null; });
   try {
@@ -39,7 +38,7 @@ class _SignInScreenState extends State<SignInScreen> {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
   await AuthService().signInWithGoogle();
   if (!(await AuthService().isEmailVerified())) {
@@ -51,7 +50,7 @@ class _SignInScreenState extends State<SignInScreen> {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
   await AuthService().signInWithApple();
   if (!(await AuthService().isEmailVerified())) {

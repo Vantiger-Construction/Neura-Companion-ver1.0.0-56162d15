@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -73,7 +72,7 @@ class _AzureSetupScreenState extends ConsumerState<AzureSetupScreen> {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
   setState(() => _isLoading = true);
   // Add real setup logic here

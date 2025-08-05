@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 
@@ -17,17 +16,15 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
   _checkVerified();
   }
 
-  // 🛡️ Error-handled
-try {
   Future<void> _checkVerified() async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   final verified = await AuthService().isEmailVerified();
   setState(() => _isVerified = verified);
@@ -36,17 +33,15 @@ try {
   }
   }
 
-  // 🛡️ Error-handled
-try {
   Future<void> _resend() async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   await AuthService().sendEmailVerification();
   setState(() => _emailSent = true);

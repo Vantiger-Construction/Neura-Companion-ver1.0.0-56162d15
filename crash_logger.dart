@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 
 class CrashLogger {
   static void logError(dynamic error, StackTrace stack, {String? context}) {
-    dev.log('Error caught: \$error', name: 'NeuraCrashLogger');
+    dev.log('Error caught: $error', name: 'NeuraCrashLogger');
     dev.log('Stack: \$stack', name: 'NeuraCrashLogger');
     if (context != null) {
       dev.log('Context: \$context', name: 'NeuraCrashLogger');

@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'package:flutter/material.dart';
 import '../services/sync_service.dart';
 
@@ -11,17 +10,15 @@ class _SyncStatusScreenState extends State<SyncStatusScreen> {
   final _sync = SyncService();
   bool _syncing = false;
 
-  // 🛡️ Error-handled
-try {
   Future<void> _startSync() async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   setState(() => _syncing = true);
   await _sync.syncAll();

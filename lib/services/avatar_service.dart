@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import '../models/ai_avatar.dart';
 
 class AvatarService {
@@ -11,33 +10,29 @@ class AvatarService {
   }
 
   /// Persist selected avatar ID
-  // 🛡️ Error-handled
-try {
   Future<void> selectAvatar(String id) async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   // TODO: save to storage
   }
 
   /// Load selected avatar
-  // 🛡️ Error-handled
-try {
   Future<AIAvatar> getSelectedAvatar() async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   // TODO: fetch from storage, default to Neura
   return getAvailableAvatars().first;

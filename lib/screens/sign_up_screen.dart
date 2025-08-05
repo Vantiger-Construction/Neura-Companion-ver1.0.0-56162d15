@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 import 'verify_email_screen.dart';
@@ -18,7 +17,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
   setState(() { _loading = true; _error = null; });
   try {

@@ -1,28 +1,27 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
 
 class AuthGuard extends StatelessWidget {
   final Widget child;
 
-  AuthGuard({required this.child});
-
-  final LocalAuthentication _auth = LocalAuthentication();
+  const AuthGuard({super.key, required this.child});
 
   Future<bool> _authenticate() async {
-  try {
-    // Your code here
-  } catch (e, stack) {
-    handleNeuraError(e, stack);
-  }
-  try {
-    return await _auth.authenticate(
-    localizedReason: 'Please authenticate to continue',
-    biometricOnly: true,
-    );
-  } catch (e) {
-    return false;
-  }
+    final LocalAuthentication auth = LocalAuthentication();
+    try {
+      // Your code here
+    } catch (e, stack) {
+      // TODO: Implement proper error handling
+      debugPrint('Authentication error: $e');
+    }
+    try {
+      return await auth.authenticate(
+        localizedReason: 'Please authenticate to continue',
+        biometricOnly: true,
+      );
+    } catch (e) {
+      return false;
+    }
   }
 
   @override

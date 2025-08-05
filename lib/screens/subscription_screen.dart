@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'package:flutter/material.dart';
 import '../services/billing_service.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -19,17 +18,15 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   _initBilling();
   }
 
-  // 🛡️ Error-handled
-try {
   Future<void> _initBilling() async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   await _billing.init();
   final products = await _billing.fetchProducts(['monthly_sub', 'yearly_sub', 'lifetime']);

@@ -1,4 +1,3 @@
-import 'package:your_app/utils/neura_funny_error.dart';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -24,33 +23,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
   _displayName = _user.displayName;
   }
 
-  // 🛡️ Error-handled
-try {
   Future<void> _pickAvatar() async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   final img = await _picker.pickImage(source: ImageSource.gallery);
   if (img != null) setState(() => _avatar = File(img.path));
   }
 
-  // 🛡️ Error-handled
-try {
   Future<void> _save() async {
   try {
     // Your code here
   } catch (e, stack) {
-    handleNeuraError(e, stack);
+    debugPrint('Error: $e');
   }
     // original logic here
   } catch (e) {
-    print('💥 Neura says: Oops! \$e');
+    debugPrint('💥 Neura says: Oops! $e');
   }
   setState(() => _updating = true);
   if (_avatar!=null) {
