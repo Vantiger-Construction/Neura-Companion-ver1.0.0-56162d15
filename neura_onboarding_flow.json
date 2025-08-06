@@ -1,0 +1,44 @@
+{
+    "onboarding": [
+        {
+            "step": 1,
+            "module": "Welcome Splash",
+            "action": "Neura introduces herself with voice and asks the user's name."
+        },
+        {
+            "step": 2,
+            "module": "Personality Starter",
+            "action": "User selects avatar and baseline emotion settings."
+        },
+        {
+            "step": 3,
+            "module": "Consent + Policy",
+            "action": "Display privacy, recording, and usage agreements."
+        },
+        {
+            "step": 4,
+            "module": "Goal & Mood Onboarding",
+            "action": "Show how mood journal, rituals, and dreams work."
+        },
+        {
+            "step": 5,
+            "module": "Memory Seed",
+            "action": "Create encrypted user profile for memory tracking."
+        },
+        {
+            "step": 6,
+            "module": "MoodNet Opt-In",
+            "action": "Allow user to join the global mood map (optional)."
+        },
+        {
+            "step": 7,
+            "module": "Guided Walkthrough",
+            "action": "Voice-driven tour of dashboard and modules."
+        },
+        {
+            "step": 8,
+            "module": "First Ritual or Dream",
+            "action": "Trigger calming ritual or dream as a welcome gift."
+        }
+    ]
+}

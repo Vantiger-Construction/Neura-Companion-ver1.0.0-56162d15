@@ -1,0 +1,8 @@
+
+🎬 Neura Onboarding Flow
+
+1. Welcome Screen: "Hi, I’m Neura. I’m here to help you grow, dream, and feel supported."
+2. Mood Selector: "How are you feeling today?" [Mood Picker + Glow Reaction]
+3. Personalization: Ask for name, voice preference, morning/evening routine.
+4. First Ritual: Offer to set up a calming ritual or dream sequence.
+5. Companion Pact: Explain how Neura evolves and remembers. Confirm user kindness agreement.
