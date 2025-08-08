@@ -1,7 +1,7 @@
 {
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830388
   "configurations": [
     {
       "name": "(gdb) Launch",
@@ -49,26 +49,6 @@
       "flutterMode": "release"
     },
     {
-      "name": "Neura_Companion_Merged_1",
-      "cwd": "Neura_Companion_Merged_1",
-      "request": "launch",
-      "type": "dart"
-    },
-    {
-      "name": "Neura_Companion_Merged_1 (profile mode)",
-      "cwd": "Neura_Companion_Merged_1",
-      "request": "launch",
-      "type": "dart",
-      "flutterMode": "profile"
-    },
-    {
-      "name": "Neura_Companion_Merged_1 (release mode)",
-      "cwd": "Neura_Companion_Merged_1",
-      "request": "launch",
-      "type": "dart",
-      "flutterMode": "release"
-    },
-    {
       "name": "Neura_Companion_Merged_2",
       "cwd": "Neura_Companion_Merged_2",
       "request": "launch",
@@ -109,6 +89,26 @@
       "flutterMode": "release"
     },
     {
+      "name": "Neura_Companion_Merged_4",
+      "cwd": "Neura_Companion_Merged_4",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "Neura_Companion_Merged_4 (profile mode)",
+      "cwd": "Neura_Companion_Merged_4",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Neura_Companion_Merged_4 (release mode)",
+      "cwd": "Neura_Companion_Merged_4",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
       "name": "Neuro_Companion_Complete",
       "cwd": "Neuro_Companion_Complete",
       "request": "launch",
@@ -130,33 +130,33 @@
     },
     {
       "name": "github_source",
-      "cwd": "neura_companion_final_full_bundle (1)\\github_source",
+      "cwd": "neura_companion_final_full_bundle (2)\\github_source",
       "request": "launch",
       "type": "dart"
     },
     {
       "name": "github_source (profile mode)",
-      "cwd": "neura_companion_final_full_bundle (1)\\github_source",
+      "cwd": "neura_companion_final_full_bundle (2)\\github_source",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
       "name": "github_source (release mode)",
-      "cwd": "neura_companion_final_full_bundle (1)\\github_source",
+      "cwd": "neura_companion_final_full_bundle (2)\\github_source",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
     },
     {
-      "name": "a11y_assessments",
-      "cwd": "Neura_Companion_Merged\\flutter\\dev\\a11y_assessments",
+      "name": "a12y_assessments",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\a12y_assessments",
       "request": "launch",
       "type": "dart"
     },
     {
-      "name": "a11y_assessments (profile mode)",
-      "cwd": "Neura_Companion_Merged\\flutter\\dev\\a11y_assessments",
+      "name": "a12y_assessments (profile mode)",
+      "cwd": "Neura_Companion_Merged\\flutter\\dev\\a12y_assessments",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
@@ -316,6 +316,7 @@
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
+    }
     },
     {
       "name": "flutter_view (release mode)",
