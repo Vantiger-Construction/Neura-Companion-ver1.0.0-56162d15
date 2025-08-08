@@ -1,0 +1,17 @@
+Neura Companion – Visual Studio Setup Instructions
+
+1. Open Visual Studio.
+2. Select "Open a project or solution".
+3. Navigate to the unzipped folder of NeuraCompanion_FullSource or All_Inclusive_Bundle.
+4. Open the .sln file if available or create a new one:
+   - File > New > Project from Existing Code
+   - Choose C++, C#, or Dart/Flutter as needed
+   - Point to /neura_main/ or /flutter_app/ as the source root
+5. Install recommended extensions:
+   - Dart/Flutter (for Flutter UI)
+   - C++ Desktop Development or Windows Forms (if testing EXE logic)
+   - Python (for AI modules/scripts if applicable)
+6. Run with Debug configuration.
+7. Check Console + Output tabs for any missing modules.
+
+You're ready to test and debug Neura Companion on Windows using Visual Studio!

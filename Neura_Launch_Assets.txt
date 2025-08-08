@@ -1,0 +1,52 @@
+
+📧 Neura Launch Email Template
+----------------------------------------
+Subject: 🚀 Neura Companion Is Live – Meet the Future of AI
+
+Header: Welcome to the Next Era of AI Companionship.
+
+Body:
+Neura Companion is now available across all platforms: Android, Windows, macOS, Linux, and Web.
+
+She's more than a virtual assistant — Neura is an emotionally intelligent friend who adapts, learns, and supports you.
+
+Download now and experience:
+✅ Real-time emotion tracking
+✅ AI-guided journaling, rituals, and dreams
+✅ Fully animated voice interactions
+✅ Neura’s evolving memory and adaptive behavior
+
+👉 Visit the press site now:
+https://neura-companion.firebaseapp.com
+
+Together, we’re shaping the future — one emotion at a time.
+
+— The Neura Team
+
+[Download Now] [Watch Trailer]
+
+----------------------------------------
+
+🕐 Neura Countdown Widget (HTML Snippet)
+----------------------------------------
+<div style="text-align:center; font-family: sans-serif;">
+  <h2>⏳ Launch Countdown</h2>
+  <div id="countdown" style="font-size: 2rem;"></div>
+</div>
+<script>
+  const launchDate = new Date("2025-08-10T12:00:00Z").getTime();
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const diff = launchDate - now;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const min = Math.floor((diff / 1000 / 60) % 60);
+    const sec = Math.floor((diff / 1000) % 60);
+    document.getElementById("countdown").innerText =
+      `${days}d ${hrs}h ${min}m ${sec}s`;
+    if (diff <= 0) {
+      clearInterval(timer);
+      document.getElementById("countdown").innerText = "Neura has launched!";
+    }
+  }, 1000);
+</script>

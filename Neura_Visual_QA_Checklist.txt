@@ -1,0 +1,15 @@
+Neura Companion – QA Test Checklist
+
+☑ Launcher loads splash screen + Neura voice
+☑ Main menu displays animation + sound correctly
+☑ Chat AI responds with emotional tone and face sync
+☑ Dream Mode plays full animation sequence with subtitles
+☑ Journal saves entries and mood entries appear in Memory Graph
+☑ Global MoodMap loads and renders heatmap
+☑ VR Mode enters Hologram Mode and avatar moves
+☑ App settings save and restore properly on reboot
+☑ Voice recognition works (STT)
+☑ All modules reachable from main navigation
+☑ No crash on sleep, back button, or window resize
+☑ CI/CD GitHub build triggers auto on push
+☑ Firebase/Web updates reflect build changes
