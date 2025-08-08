@@ -1,0 +1,35 @@
+Neura Companion Privacy Policy
+
+Effective Date: August 2025
+
+Neura Companion is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information.
+
+1. Data We Collect
+- Mood entries and emotional tags (locally stored or synced)
+- Journal entries (voice or text, stored with consent)
+- Microphone access (only during voice journal sessions)
+- App usage analytics (anonymized)
+
+2. How We Use Your Data
+- To provide AI-driven support, reflections, and visualizations
+- To enhance your experience with personalized content
+- To visualize dream states or emotional patterns
+- We NEVER sell your data or share it without consent
+
+3. Permissions Explained
+- Microphone: For voice journaling
+- Storage: To save entries and mood data
+- Internet: To sync with Firebase if enabled
+
+4. Your Rights
+- You may delete any data at any time
+- You can opt-out of cloud syncing in the settings
+- You can request a data export by contacting us
+
+5. Contact Us
+For any privacy-related inquiries:
+Email: privacy@neuracompanion.app
+
+We comply with GDPR, CCPA, and international data protection laws.
+
+By using Neura Companion, you agree to this policy.
