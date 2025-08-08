@@ -1,0 +1,17 @@
+📦 Flutter Dependencies:
+✅ flutter
+✅ cupertino_icons
+✅ fl_chart
+✅ lottie
+✅ rive
+✅ provider
+✅ shared_preferences
+✅ firebase_core
+✅ firebase_auth
+✅ cloud_firestore
+
+🎮 Unity Packages:
+✅ com.unity.xr.interaction.toolkit
+✅ com.unity.textmeshpro
+✅ com.unity.timeline
+✅ com.unity.render-pipelines.universal
